@@ -4,11 +4,20 @@
     box-sizing: border-box;
 }
 
+:root {
+    --bg-color: #000;
+    --text-color: #ddd;
+    --accent-color: #00ffff;
+    --border-color: #333;
+    --muted-color: #666;
+    --secondary-text: #888;
+}
+
 body {
     font-family: monospace;
     line-height: 1.6;
-    color: #ddd;
-    background: #000;
+    color: var(--text-color);
+    background: var(--bg-color);
     min-height: 100vh;
     padding: 20px;
 }
@@ -21,7 +30,7 @@ body {
 
 header {
     margin-bottom: 30px;
-    border-bottom: 2px solid #00ffff;
+    border-bottom: 2px solid var(--accent-color);
     padding-bottom: 20px;
 }
 
@@ -32,7 +41,7 @@ header {
 .profile-picture img {
     width: 100px;
     height: 100px;
-    border: 2px solid #00ffff;
+    border: 2px solid var(--accent-color);
 }
 
 h1 {
@@ -43,7 +52,7 @@ h1 {
 
 h2 {
     font-size: 1.3em;
-    color: #00ffff;
+    color: var(--accent-color);
     margin-bottom: 15px;
     margin-top: 25px;
 }
@@ -54,7 +63,7 @@ h2 {
 
 .intro p {
     font-size: 1.1em;
-    color: #ddd;
+    color: var(--text-color);
 }
 
 .links {
@@ -70,7 +79,7 @@ h2 {
 }
 
 .links a {
-    color: #00ffff;
+    color: var(--accent-color);
     text-decoration: none;
     font-size: 1em;
 }
@@ -93,7 +102,7 @@ h2 {
 }
 
 .works a {
-    color: #00ffff;
+    color: var(--accent-color);
     text-decoration: none;
     font-weight: bold;
 }
@@ -103,15 +112,15 @@ h2 {
 }
 
 .works em {
-    color: #888;
+    color: var(--secondary-text);
     font-size: 0.9em;
 }
 
 footer {
     margin-top: 40px;
     padding-top: 20px;
-    border-top: 1px solid #333;
-    color: #666;
+    border-top: 1px solid var(--border-color);
+    color: var(--muted-color);
     font-size: 0.9em;
 }
 
