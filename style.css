@@ -7,6 +7,7 @@
 :root {
     --bg-color: #000;
     --text-color: #ddd;
+    --heading-color: #fff;
     --accent-color: #00ffff;
     --border-color: #333;
     --muted-color: #666;
@@ -46,7 +47,7 @@ header {
 
 h1 {
     font-size: 2em;
-    color: #fff;
+    color: var(--heading-color);
     margin-bottom: 10px;
 }
 
